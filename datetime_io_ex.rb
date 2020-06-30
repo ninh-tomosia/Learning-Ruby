@@ -4,7 +4,7 @@ class DateTimeIOExample
 
     # file xu ly
     def run_file()
-        filename = get_date_time().to_s
+        filename = "#{get_date_time().to_s}.txt"
         values = input_values()
         create_file(filename, values)
         puts "Read file"
@@ -13,7 +13,7 @@ class DateTimeIOExample
 
     # lay ngay gio hien tai
     def get_date_time()
-        date_time = DateTime.now
+        date_time = Time.now
     end
 
     # tao file co ten va gia tri duoc truyen vao
